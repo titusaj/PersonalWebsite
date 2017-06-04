@@ -9,10 +9,15 @@
 
 .App-header {
   background-color: #2980b9;
-  height: 150px;
+  height: 350px;
 
-  padding: 20px;
+  padding: 30px;
   color: white;
+}
+
+.App-buttons{
+    padding: 20px;
+    height: 300px;
 }
 
 .App-intro {
@@ -21,15 +26,16 @@
 }
 
 .App-splash{
-  height: 600px;
-
+  height: 100px;
 }
 
-.App-reactButton{
-  height: 10px;
-}
+.App-bottom {
+  background-color:#2980b9;
+  height: 150px;
 
-.App-butt
+  padding: 20px;
+  color: white;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

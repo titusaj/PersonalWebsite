@@ -1,31 +1,34 @@
 import React, { Component } from 'react';
-import { Button, Container, Header, Icon} from 'semantic-ui-react'
+import { Button, Container, Header, Icon, Divider, Image} from 'semantic-ui-react'
 
 
-import logo from './logo.svg';
+import bridgePic from './BenFranklinBridge.jpg';
+import profilePic from './profilePic.png'
 import './App.css';
 
 
-
-
 class App extends Component {
-
-
-
-
 
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Titus A. John</h2>
-        </div>
-        <p className="App-intro">
-          "Personal Website for Titus A John."
-        </p>
 
-        <div>
+          <Image src={profilePic} size='small' shape='circular' centered/>
+
+         <Container text>
+           <Header as='h2'>
+            "Hello, I'm Titus"
+           </Header>
+
+
+
+
+         </Container>
+
+        </div>
+
+        <div className="App-buttons">
 
             <Button
               content='GitHub'
@@ -51,17 +54,19 @@ class App extends Component {
               labelPosition='left'
               size='medium'
             />
+          </div>
 
-            <Button
-              content='Facebook'
-              href='https://react.semantic-ui.com'
-              icon='facebook'
-              labelPosition='left'
-              size='medium'
-            />
 
-             <Icon name='home' size='small' />
-        </div>
+
+          <div className ="App-splash">
+              <Image src={bridgePic} size='small' />
+
+          </div>
+
+          <div className="App-bottom">
+             <Divider horizontal>Titus A. John 2017 </Divider>
+          </div>
+
 
 
       </div>
