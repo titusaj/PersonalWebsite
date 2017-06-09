@@ -7,6 +7,7 @@ import profilePic from './profilePic.png'
 import './App.css';
 
 
+
 class App extends Component {
 
   render() {
@@ -17,8 +18,9 @@ class App extends Component {
           <Image src={profilePic} size='small' shape='circular' centered/>
 
          <Container text>
-           <Header as='h2'>
+           <Header as='h2' inverted>
             "Hello, I'm Titus"
+
            </Header>
 
 
@@ -56,16 +58,18 @@ class App extends Component {
             />
           </div>
 
-
-
-          <div className ="App-splash">
-              <Image src={bridgePic} size='small' />
-
-          </div>
-
           <div className="App-bottom">
-             <Divider horizontal>Titus A. John 2017 </Divider>
+             <Divider horizontal inverted>Titus A. John 2017 </Divider>
           </div>
+
+
+          <div className="App-splash">
+            <Image
+               style={{width: 1200,height: 500}}
+              src={bridgePic}/>
+          </div>
+
+
 
 
 
