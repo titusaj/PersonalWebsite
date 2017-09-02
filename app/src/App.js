@@ -3,7 +3,7 @@ import { Button, Container, Header, Icon, Divider, Image} from 'semantic-ui-reac
 
 
 import bridgePic from './BenFranklinBridge.jpg';
-import profilePic from './profilePic.png'
+import profilePic from './profilePic.jpg'
 import './App.css';
 
 
@@ -15,18 +15,16 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
 
-          <Image src={profilePic} size='small' shape='circular' centered/>
+        <Container text>
+          <Header as='h1' inverted>
+           "Hello, I'm Titus, I'm a research engineer in Washington DC"
 
-         <Container text>
-           <Header as='h2' inverted>
-            "Hello, I'm Titus"
+          </Header>
+        </Container>
 
-           </Header>
-
+          <Image src={profilePic} size='small' shape='circular' left/>
 
 
-
-         </Container>
 
         </div>
 
@@ -51,7 +49,7 @@ class App extends Component {
 
             <Button
               content='LinkedIn'
-              href='https://react.semantic-ui.com'
+              href='https://www.linkedin.com/in/titus-a-john/'
               icon='linkedin'
               labelPosition='left'
               size='medium'
@@ -63,11 +61,6 @@ class App extends Component {
           </div>
 
 
-          <div className="App-splash">
-            <Image
-               style={{width: 1200,height: 500}}
-              src={bridgePic}/>
-          </div>
 
 
 
