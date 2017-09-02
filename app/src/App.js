@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Header, Icon, Divider, Image} from 'semantic-ui-react'
+import { Button, Container, Header, Icon, Divider, Image, Text} from 'semantic-ui-react'
 
 
 import bridgePic from './BenFranklinBridge.jpg';
@@ -15,16 +15,20 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
 
-        <Container text>
-          <Header as='h1' inverted>
-           "Hello, I'm Titus, I'm a research engineer in Washington DC"
+          <Container text>
+            <Header as='h1' inverted>
+               Hi Im Titus John
 
-          </Header>
-        </Container>
+            </Header>
+          </Container>
 
-          <Image src={profilePic} size='small' shape='circular' left/>
+          <Image src={profilePic} size='small' shape='circular' centered/>
 
-
+          <text style={{color: 'white',fontWeight: 'bold', fontSize: '20'}}>
+          I live in Washington DC.
+          I am intrested in deep learning and signal processing {"\n"}
+          for biomedical applications
+          </text>
 
         </div>
 
