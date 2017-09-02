@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Header, Icon, Divider, Image, Text} from 'semantic-ui-react'
+import { Button, Container, Header, Icon, Divider, Image, TextArea} from 'semantic-ui-react'
 
 
 import bridgePic from './BenFranklinBridge.jpg';
@@ -17,29 +17,38 @@ class App extends Component {
 
           <Container text>
             <Header as='h1' inverted>
-               Hi Im Titus John
-
+               Titus A. John
             </Header>
           </Container>
 
+          <Divider hidden />
+
           <Image src={profilePic} size='small' shape='circular' centered/>
 
+          <Divider hidden/>
+
+          <Header as='h2' inverted>About Me</Header>
+
           <text style={{color: 'white',fontWeight: 'bold', fontSize: '20'}}>
-          I live in Washington DC.
-          I am intrested in deep learning and signal processing {"\n"}
-          for biomedical applications
+          <p>  I live in Washington DC.
+            I am intrested in deep learning and signal processing {'\n'}
+            for biomedical applications.</p>
           </text>
+
+
 
         </div>
 
         <div className="App-buttons">
+
+
 
             <Button
               content='GitHub'
               href='https://github.com/titusaj'
               icon='github'
               labelPosition='left'
-              size='medium'
+              size='large'
             />
 
 
@@ -48,7 +57,7 @@ class App extends Component {
               href='https://react.semantic-ui.com'
               icon='mail outline'
               labelPosition='left'
-              size='medium'
+              size='large'
             />
 
             <Button
@@ -56,8 +65,26 @@ class App extends Component {
               href='https://www.linkedin.com/in/titus-a-john/'
               icon='linkedin'
               labelPosition='left'
-              size='medium'
+              size='large'
             />
+          </div>
+
+          <div className="App-projects">
+
+              <Header as='h1' centered>
+                  Projects
+              </Header>
+
+             <Divider clearing/>
+          </div>
+
+          <div className="App-readingList">
+
+                <Header as='h1' centered>
+                   Reading List
+                </Header>
+
+             <Divider clearing/>
           </div>
 
           <div className="App-bottom">

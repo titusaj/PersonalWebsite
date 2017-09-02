@@ -17,26 +17,27 @@
 }
 
 .App-image {
-  padding: 30px;
+  padding: 50px;
 
 }
-
-
-
 .App-buttons{
-    background-color:#ecf0f1;
+    background-color:#ffffff;
     padding: 20px;
-    height: 300px;
-}
-
-.App-intro {
-  font-size: large;
-  background-color:#9b59b6;
+    height: 150px;
 }
 
 
-.App-splash{
-  height: 500px;
+.App-projects{
+  background-color:#ffffff;
+  padding: 20px;
+  height: 300px;
+}
+
+
+.App-readingList{
+  background-color:#ffffff;
+  padding: 20px;
+  height: 300px;
 }
 
 .App-bottom {
