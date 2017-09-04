@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Container, Header, Icon, Divider, Image, TextArea} from 'semantic-ui-react'
+import { Button, Container, Header, Icon, Divider, Image, List} from 'semantic-ui-react'
 
 
 import bridgePic from './BenFranklinBridge.jpg';
 import profilePic from './profilePic.jpg'
+import entpMind from './entpMind.jpg'
 import './App.css';
 
 
@@ -54,7 +55,7 @@ class App extends Component {
 
             <Button
               content='Email'
-              href='https://react.semantic-ui.com'
+              href='mailto:titusaj92@gmail.com'
               icon='mail outline'
               labelPosition='left'
               size='large'
@@ -83,6 +84,14 @@ class App extends Component {
                 <Header as='h1' centered>
                    Reading List
                 </Header>
+
+                <List size='medium'>
+                  <List.Content>
+                    <List.Header as='a'>Mind of a Entrepreneur</List.Header>
+                  </List.Content>
+
+                  <Image src={entpMind} size='small' centered/>
+                </List>
 
              <Divider clearing/>
           </div>
