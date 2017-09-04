@@ -85,15 +85,22 @@ class App extends Component {
                    Reading List
                 </Header>
 
-                <List size='medium'>
+            <Divider clearing/>
+
+                <List fontSize='20'>
                   <List.Content>
-                    <List.Header as='a'>Mind of a Entrepreneur</List.Header>
+                    <List.Item>
+                      <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
+                      Mind of a Entrepreneur
+                      </text>
+                    </List.Item>
                   </List.Content>
 
+                        <Divider hidden />
                   <Image src={entpMind} size='small' centered/>
                 </List>
 
-             <Divider clearing/>
+
           </div>
 
           <div className="App-bottom">
