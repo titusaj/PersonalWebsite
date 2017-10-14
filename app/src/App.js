@@ -3,9 +3,10 @@ import { Button, Container, Header, Icon, Divider, Image, List} from 'semantic-u
 
 
 import bridgePic from './BenFranklinBridge.jpg';
-import profilePic from './profilePic.jpg'
+import profilePic from './Dubai.jpg'
 import entpMind from './entpMind.jpg'
 import deepLearning from './deepLearning.jpg'
+import hitRefresh from './hitRefresh.jpg'
 import './App.css';
 
 
@@ -18,20 +19,20 @@ class App extends Component {
         <div className="App-header">
 
           <Container text>
-            <Header as='h1' inverted>
-               Titus A. John
+            <Header as='h1'>
+               Titus  John
             </Header>
           </Container>
 
           <Divider hidden />
 
-          <Image src={profilePic} size='small' shape='circular' centered/>
+          <Image src={profilePic} size='large' centered/>
 
           <Divider hidden/>
 
-          <Header as='h2' inverted>About Me</Header>
+          <Header as='h2'>About Me</Header>
 
-          <text style={{color: 'white',fontWeight: 'bold', fontSize: '20'}}>
+          <text style={{color: 'black',fontWeight: 'bold', fontSize: '20'}}>
           <p>  I live in Washington DC.
             I am interested in deep learning and signal processing {'\n'}
             for biomedical applications.</p>
@@ -87,7 +88,7 @@ class App extends Component {
 
           <div className="App-projects">
 
-              <Header as='h1' centered>
+              <Header as='h1' centered inverted>
                   Projects
               </Header>
 
@@ -125,7 +126,19 @@ class App extends Component {
 
                         <Divider hidden />
                         <Image src={deepLearning} size='small' centered/>
-                    </List.Content>
+
+                        <Divider hidden />
+
+                      <List.Item>
+                        <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
+                          Hit Refresh
+                        </text>
+                      </List.Item>
+
+                      <Divider hidden />
+                      <Image src={hitRefresh} size='small' centered/>
+                  </List.Content>
+
                 </List>
 
 
@@ -134,11 +147,6 @@ class App extends Component {
           <div className="App-bottom">
              <Divider horizontal inverted>Titus A. John 2017 </Divider>
           </div>
-
-
-
-
-
 
 
       </div>

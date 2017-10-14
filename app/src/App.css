@@ -9,8 +9,8 @@
 }
 
 .App-header {
-  background-color: #9b59b6;
-  height: 400px;
+  background-color: #ffffff;
+  height: 600px;
 
   padding: 30px;
   color: #9b59b6;
@@ -28,7 +28,7 @@
 
 
 .App-projects{
-  background-color:#ffffff;
+  background-color: #9b59b6;;
   padding: 20px;
   height: 300px;
 }
@@ -37,7 +37,7 @@
 .App-readingList{
   background-color:#ffffff;
   padding: 20px;
-  height: 800px;
+  height: 1000px;
 }
 
 .App-bottom {
