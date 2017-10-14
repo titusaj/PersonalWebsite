@@ -5,6 +5,7 @@ import { Button, Container, Header, Icon, Divider, Image, List} from 'semantic-u
 import bridgePic from './BenFranklinBridge.jpg';
 import profilePic from './profilePic.jpg'
 import entpMind from './entpMind.jpg'
+import deepLearning from './deepLearning.jpg'
 import './App.css';
 
 
@@ -32,7 +33,7 @@ class App extends Component {
 
           <text style={{color: 'white',fontWeight: 'bold', fontSize: '20'}}>
           <p>  I live in Washington DC.
-            I am intrested in deep learning and signal processing {'\n'}
+            I am interested in deep learning and signal processing {'\n'}
             for biomedical applications.</p>
           </text>
 
@@ -49,7 +50,8 @@ class App extends Component {
               href='https://github.com/titusaj'
               icon='github'
               labelPosition='left'
-              size='large'
+              size='big'
+              color = 'purple'
             />
 
 
@@ -58,15 +60,28 @@ class App extends Component {
               href='mailto:titusaj92@gmail.com'
               icon='mail outline'
               labelPosition='left'
-              size='large'
+              size='big'
+              color = 'red'
             />
+
+            <Divider hidden/>
 
             <Button
               content='LinkedIn'
               href='https://www.linkedin.com/in/titus-a-john/'
               icon='linkedin'
               labelPosition='left'
-              size='large'
+              size='big'
+              color = 'blue'
+            />
+
+            <Button
+              content='Resume'
+              href='https://www.linkedin.com/in/titus-a-john/'
+              icon='file pdf outline'
+              labelPosition='left'
+              size='big'
+              color = 'white'
             />
           </div>
 
@@ -87,17 +102,30 @@ class App extends Component {
 
             <Divider clearing/>
 
-                <List fontSize='20'>
+                <List>
                   <List.Content>
-                    <List.Item>
-                      <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
-                      Mind of a Entrepreneur
-                      </text>
-                    </List.Item>
-                  </List.Content>
+                        <List.Item>
+                          <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
+                            Mind of a Entrepreneur
+                          </text>
+                        </List.Item>
+
+
+                      <Divider hidden />
+                      <Image src={entpMind} size='small' centered/>
+
+                      <Divider hidden />
+
+                      <List.Item>
+                        <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
+                          Deep Learning
+                        </text>
+                      </List.Item>
+
 
                         <Divider hidden />
-                  <Image src={entpMind} size='small' centered/>
+                        <Image src={deepLearning} size='small' centered/>
+                    </List.Content>
                 </List>
 
 
