@@ -16,7 +16,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <div className="App-header">
+
+
+        </div>
+
+        <div className="App-splash">
 
           <Container text>
             <Header as='h1'>
@@ -34,7 +40,7 @@ class App extends Component {
 
           <text style={{color: 'black',fontWeight: 'bold', fontSize: '20'}}>
           <p>  I live in Washington DC.
-            I am interested in deep learning and signal processing {'\n'}
+            I am interested in deep learning, computer vision, and signal processing {'\n'}
             for biomedical applications.</p>
           </text>
 
@@ -76,14 +82,7 @@ class App extends Component {
               color = 'blue'
             />
 
-            <Button
-              content='Resume'
-              href='https://www.linkedin.com/in/titus-a-john/'
-              icon='file pdf outline'
-              labelPosition='left'
-              size='big'
-              color = 'white'
-            />
+          
           </div>
 
           <div className="App-projects">
