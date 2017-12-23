@@ -7,6 +7,7 @@ import profilePic from './Dubai.jpg'
 import entpMind from './entpMind.jpg'
 import deepLearning from './deepLearning.jpg'
 import hitRefresh from './hitRefresh.jpg'
+import artStart from 'art_start.jpg'
 import './App.css';
 
 
@@ -82,7 +83,7 @@ class App extends Component {
               color = 'blue'
             />
 
-          
+
           </div>
 
           <div className="App-projects">
@@ -134,8 +135,14 @@ class App extends Component {
                         </text>
                       </List.Item>
 
+                      <List.Item>
+                        <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
+                          Art of Start 2.0
+                        </text>
+                      </List.Item>
+
                       <Divider hidden />
-                      <Image src={hitRefresh} size='small' centered/>
+                      <Image src={artStart} size='small' centered/>
                   </List.Content>
 
                 </List>
