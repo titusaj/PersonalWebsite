@@ -26,10 +26,12 @@ class App extends Component {
         <div className="App-splash">
 
           <Container text>
-            <Header as='h1'>
+            <text style={{color: 'black',fontWeight: 'bold', fontSize: '60'}}>
                Titus  John
-            </Header>
+            </text>
           </Container>
+
+            <Divider clearing/>
 
           <Divider hidden />
 
@@ -38,6 +40,8 @@ class App extends Component {
           <Divider hidden/>
 
           <Header as='h2'>About Me</Header>
+          <Divider clearing/>
+
 
           <text style={{color: 'black',fontWeight: 'bold', fontSize: '20'}}>
           <p>  I live in Washington DC.
@@ -49,6 +53,8 @@ class App extends Component {
 
         </div>
 
+        <Divider hidden/>
+        <Divider hidden/>
         <div className="App-buttons">
 
 
@@ -86,14 +92,6 @@ class App extends Component {
 
           </div>
 
-          <div className="App-projects">
-
-              <Header as='h1' centered inverted>
-                  Projects
-              </Header>
-
-             <Divider clearing/>
-          </div>
 
           <div className="App-readingList">
 
@@ -102,7 +100,6 @@ class App extends Component {
                 </Header>
 
             <Divider clearing/>
-
                 <List>
                   <List.Content>
                         <List.Item>
@@ -110,7 +107,6 @@ class App extends Component {
                             Mind of a Entrepreneur
                           </text>
                         </List.Item>
-
 
                       <Divider hidden />
                       <Image src={entpMind} size='small' centered/>
@@ -148,13 +144,7 @@ class App extends Component {
                       <Divider hidden />
                           <Image src={artStart} size='small' centered/>
                       <Divider hidden />
-
-
-
-
-
                   </List.Content>
-
                 </List>
 
 
