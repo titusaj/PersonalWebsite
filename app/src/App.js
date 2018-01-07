@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Container, Header, Icon, Divider, Image, List} from 'semantic-ui-react'
+import { Button, Container, Header, Icon, Divider, Image, List, Grid, Column} from 'semantic-ui-react'
 
 
 import bridgePic from './BenFranklinBridge.jpg';
@@ -19,30 +19,40 @@ class App extends Component {
     return (
       <div className="App">
 
-
-
-
         <div className="App-header">
-          <img class="ui fluid image" src={coverImage}/>
+            <div class="ui page grid">
+                <div class="column">
+                    <h1 class="ui title-header">
+                    </h1>
+                    <div class="centered grid slogan">
+                        <div class="column">
 
-          <Container text>
+                          <Divider hidden/>
+                          <Divider hidden/>
+                          <Divider hidden/>
+                          <Divider hidden/>
 
-            <text style={{color: 'white',fontWeight: 'bold', fontSize: '50'}}>
-               Titus  John
-            </text>
-          </Container>
+                        <text style={{color: 'white', fontSize: '50'}}>
+                            Titus  John
+                         </text>
+                        <Divider hidden/>
+
+                         <text style={{color: 'white', fontSize: '30'}}>
+                         <p> I work with deep learning, computer vision, {'\n'} and signal processing
+                           on biomedical applications.</p>
+                         </text>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
         <div className="App-splash">
-
-
-
-
-
           <Divider hidden />
 
-          <Image src={profilePic} size='large' centered/>
+
 
           <Divider hidden/>
 
@@ -50,11 +60,15 @@ class App extends Component {
           <Divider clearing/>
 
 
-          <text style={{color: 'black',fontWeight: 'bold', fontSize: '20'}}>
-          <p>  I live in Washington DC.
-            I am interested in deep learning, computer vision, and signal processing {'\n'}
-            for biomedical applications.</p>
+          <text style={{color: 'black', fontSize: '20'}}>
+          <p> I live in Washington DC. I am from North Carolina.
+          I studied engineering at NC State University (Undergraduate) and the University of Michigan (Graduate)
+          </p>
           </text>
+
+          <Divider hidden/>
+
+          <Image src={profilePic} size='large' centered/>
         </div>
 
 
