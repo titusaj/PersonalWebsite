@@ -8,6 +8,7 @@ import entpMind from './entpMind.jpg'
 import deepLearning from './deepLearning.jpg'
 import hitRefresh from './hitRefresh.jpg'
 import artStart from './art_start.jpeg'
+import coverImage from './purple-nebula.jpg'
 import './App.css';
 
 
@@ -18,20 +19,26 @@ class App extends Component {
     return (
       <div className="App">
 
-        <div className="App-header">
 
+
+
+        <div className="App-header">
+          <img class="ui fluid image" src={coverImage}/>
+
+          <Container text>
+
+            <text style={{color: 'white',fontWeight: 'bold', fontSize: '50'}}>
+               Titus  John
+            </text>
+          </Container>
 
         </div>
 
         <div className="App-splash">
 
-          <Container text>
-            <text style={{color: 'black',fontWeight: 'bold', fontSize: '60'}}>
-               Titus  John
-            </text>
-          </Container>
 
-            <Divider clearing/>
+
+
 
           <Divider hidden />
 
@@ -48,17 +55,11 @@ class App extends Component {
             I am interested in deep learning, computer vision, and signal processing {'\n'}
             for biomedical applications.</p>
           </text>
-
-
-
         </div>
 
-        <Divider hidden/>
-        <Divider hidden/>
+
+
         <div className="App-buttons">
-
-
-
             <Button
               content='GitHub'
               href='https://github.com/titusaj'
