@@ -38,8 +38,8 @@ class App extends Component {
                         <Divider hidden/>
 
                          <text style={{color: 'white', fontSize: '30'}}>
-                         <p> I work with deep learning, computer vision, {'\n'} and signal processing
-                           on biomedical applications.</p>
+                         <p> I apply deep learning, computer vision, {'\n'} and signal processing
+                           tools to biomedical problems.</p>
                          </text>
 
                         </div>
@@ -104,6 +104,15 @@ class App extends Component {
               color = 'blue'
             />
 
+            <Button
+              content='Resume'
+              href='https://www.linkedin.com/in/titus-a-john/'
+              icon='file pdf outline'
+              labelPosition='left'
+              size='big'
+              color = 'green'
+            />
+
 
           </div>
 
@@ -115,58 +124,35 @@ class App extends Component {
                 </Header>
 
             <Divider clearing/>
-                <List>
-                  <List.Content>
+                <List horizontal>
+
                         <List.Item>
-                          <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
-                            Mind of a Entrepreneur
-                          </text>
+                          <Image src={entpMind} size='small' centered/>
                         </List.Item>
 
-                      <Divider hidden />
-                      <Image src={entpMind} size='small' centered/>
-
-                      <Divider hidden />
 
                       <List.Item>
-                        <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
-                          Deep Learning
-                        </text>
-                      </List.Item>
-
-
-                        <Divider hidden />
                         <Image src={deepLearning} size='small' centered/>
-
-                        <Divider hidden />
-
-                      <List.Item>
-                        <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
-                          Hit Refresh
-                        </text>
                       </List.Item>
 
-                      <Divider hidden />
-                          <Image src={hitRefresh} size='small' centered/>
-                      <Divider hidden />
 
                       <List.Item>
-                        <text style={{color: 'black',fontWeight: 'bold', fontSize: '18'}}>
-                          Art of Start 2.0
-                        </text>
-                      </List.Item>
+                        <Image src={hitRefresh} size='small' centered/>
+                     </List.Item>
 
-                      <Divider hidden />
+
+                      <List.Item>
                           <Image src={artStart} size='small' centered/>
-                      <Divider hidden />
-                  </List.Content>
+                      </List.Item>
+
+
                 </List>
 
 
           </div>
 
           <div className="App-bottom">
-             <Divider horizontal inverted>Titus A. John 2017 </Divider>
+             <Divider horizontal>Titus A. John 2018 </Divider>
           </div>
 
 

@@ -4,7 +4,7 @@
 }
 
 .App-header{
-    height: 700px;
+    height: 900px;
     background-image: url(./purple-nebula.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,11 +48,11 @@
 .App-readingList{
   background-color:#ffffff;
   padding: 20px;
-  height: 1300px;
+  height: 500px;
 }
 
 .App-bottom {
-  background-color:#9b59b6;
+  background-color:#ecf0f1;
   height: 150px;
 
   padding: 20px;
