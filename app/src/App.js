@@ -32,12 +32,13 @@ class App extends Component {
                           <Divider hidden/>
                           <Divider hidden/>
 
-                        <text style={{color: 'white', fontSize: '50'}}>
+                        <text style={{color: 'white', fontSize: '70'}}>
                             Titus  John
                          </text>
                         <Divider hidden/>
+                        <Divider hidden/>
 
-                         <text style={{color: 'white', fontSize: '30'}}>
+                         <text style={{color: 'white', fontSize: '35'}}>
                          <p> I apply deep learning, computer vision, {'\n'} and signal processing
                            tools to biomedical problems.</p>
                          </text>
