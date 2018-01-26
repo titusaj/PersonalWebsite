@@ -117,6 +117,10 @@ class App extends Component {
 
           </div>
 
+          <div className="App-projects">
+
+          </div>
+
 
           <div className="App-readingList">
 
@@ -151,6 +155,10 @@ class App extends Component {
 
 
           </div>
+
+
+
+
 
           <div className="App-bottom">
              <Divider horizontal>Titus A. John 2018 </Divider>
