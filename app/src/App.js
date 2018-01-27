@@ -9,6 +9,8 @@ import deepLearning from './deepLearning.jpg'
 import hitRefresh from './hitRefresh.jpg'
 import artStart from './art_start.jpeg'
 import coverImage from './purple-nebula.jpg'
+import michiganLogo from './michiganLogo.jpg'
+import ncsuLogo from './ncsu_logo_small.jpg'
 import './App.css';
 
 
@@ -51,12 +53,7 @@ class App extends Component {
         </div>
 
         <div className="App-splash">
-          <Divider hidden />
-
-
-
           <Divider hidden/>
-
           <Header as='h2'>About Me</Header>
           <Divider clearing/>
 
@@ -70,6 +67,8 @@ class App extends Component {
           <Divider hidden/>
 
           <Image src={profilePic} size='large' centered/>
+
+
         </div>
 
 
@@ -119,11 +118,15 @@ class App extends Component {
 
           <div className="App-projects">
 
+          <Divider hidden/>
+          <Header inverted as='h2'>Projects</Header>
+          <Divider clearing/>
+
           </div>
 
 
           <div className="App-readingList">
-
+          <Divider hidden/>
                 <Header as='h1' centered>
                    Reading List
                 </Header>
