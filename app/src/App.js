@@ -127,11 +127,11 @@ class App extends Component {
 
           <div className="App-readingList">
           <Divider hidden/>
-                <Header as='h1' centered>
+                <Header inverted as='h1' centered>
                    Reading List
                 </Header>
 
-            <Divider clearing/>
+            <Divider inverted clearing/>
                 <List horizontal>
 
                         <List.Item>
